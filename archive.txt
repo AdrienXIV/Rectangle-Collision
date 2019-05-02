@@ -1,0 +1,40 @@
+collision couleur :
+function collision(a, b) {
+
+    /* if (a.x < b.x + b.width &&
+         a.x + a.width > b.x &&
+         a.y < b.y + b.height &&
+         a.y + a.height > b.y) {
+         return true;*/
+    if (a.x == 500 - a.width) {
+        return true;
+    } else if (a.x == 0) {
+        obj_1_rebond_gauche = true;
+        return true;
+    } else {
+        obj_1_rebond_gauche = false;
+        return false;
+    }
+}
+
+
+function animate :
+/* if (collision(obj_1, obj_2)) {
+
+        //cancelAnimationFrame(animation_frame);
+        if (obj_1_rebond_gauche) {
+            obj_1_pos_x = false;
+            obj_1.color = 'green';
+            obj_2.color = 'orange';
+        } else {
+            obj_1_pos_x = true;
+            obj_1.color = 'red';
+            obj_2.color = 'black';
+        }
+
+    }
+*/
+
+
+var obj_1_pos_x = false;
+var obj_1_rebond_gauche = false;
